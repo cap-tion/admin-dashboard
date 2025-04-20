@@ -32,6 +32,7 @@ body{
     flex: 0 0 30px;
     height: 30px;
     width: 30px;
+    color: white;
 }
 .c{
     flex: 1;
@@ -41,6 +42,7 @@ body{
     border: 2px rgb(64, 65, 64) solid;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white
 }
 .a{
     
@@ -104,7 +106,7 @@ body{
 .sidebar{
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color:#222222
+    background-color:#222222;
 }
 .content{
     grid-column: 2/3;
@@ -203,4 +205,102 @@ h3 {
     margin: 5px 0 0 0; /* only top margin */
     font-size: 0.75rem;
     font-weight: bold;
+}
+.projects:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  .icons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .trend-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trend-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.trend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.trend-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.trend-user {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.trend-project {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #333;
+}
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #222222;
+    color: white;
+    display: grid;
+    grid-template-rows: 40px 300px 60px;
+    padding: 20px 15px;
+    font-family: 'Poppins', sans-serif;
+    row-gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    grid-row: 1/2;
+}
+
+.sidebar-top,
+.sidebar-bottom {
+    display: grid;
+    gap: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    transform: translateX(5px);
+}
+.sidebar-top{
+    grid-row: 2/3;
+}
+.sidebar-bottom{
+    grid-row: 3/4;
 }
